@@ -152,7 +152,7 @@ app.frame('/:fid/:secret', async (c) => {
 
   ids = MakeID(7);
   action = `/0/dangs${ids}`;
-  const uriShare = encodeURI(`https://warpcast.com/~/compose?text=Check your $BUILD Stats.  &embeds[]=${SITE_URL}api/${fid}/dangs${ids}`);
+  const uriShare = encodeURI(`https://warpcast.com/~/compose?text=Check your $BUILD Stats. &embeds[]=${SITE_URL}api/${fid}/dangs${ids}`);
 
   return c.res({
     imageOptions: {
@@ -175,7 +175,7 @@ app.frame('/:fid/:secret', async (c) => {
             </Columns> : "" }
           </Row>
           { Content(weeklyAllowance, remainingAllowance, masks, rank) }?
-          <Row height="1/7" alignVertical='bottom'> <Text size="12" color="white" align='right'>frame design by @dangs.eth</Text> </Row>
+          <Row height="1/7" alignVertical='bottom'> <Text size="12" color="white" align='right'>frame design by Kiet</Text> </Row>
         </Rows>
     </Box>
     ),
