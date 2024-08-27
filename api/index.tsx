@@ -174,7 +174,7 @@ app.frame('/:fid/:secret', async (c) => {
               </Column>
             </Columns> : "" }
           </Row>
-          {/* { Content(weeklyAllowance, remainingAllowance, masks, rank) }? */}
+          { Content(weeklyAllowance, remainingAllowance, masks, rank) }?
           <Row height="1/7" alignVertical='bottom'> <Text size="12" color="white" align='right'>frame design by @dangs.eth</Text> </Row>
         </Rows>
     </Box>
