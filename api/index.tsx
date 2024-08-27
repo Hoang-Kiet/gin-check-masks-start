@@ -9,7 +9,7 @@ import { neynar } from 'frog/middlewares'
 const SITE_URL = "https://8fc8-116-99-47-171.ngrok-free.app";
 
 export const app = new Frog({
-  title: 'Check Mask Start By Dangs',
+  title: 'Check Mask Start By Kiet',
   assetsPath: '/',
   basePath: '/api',
   ui: { vars },
@@ -152,7 +152,7 @@ app.frame('/:fid/:secret', async (c) => {
 
   ids = MakeID(7);
   action = `/0/dangs${ids}`;
-  const uriShare = encodeURI(`https://warpcast.com/~/compose?text=Check your $MASKS Stats. Frame by @dangs.eth &embeds[]=${SITE_URL}api/${fid}/dangs${ids}`);
+  const uriShare = encodeURI(`https://warpcast.com/~/compose?text=Check your $BUILD Stats.  &embeds[]=${SITE_URL}api/${fid}/dangs${ids}`);
 
   return c.res({
     imageOptions: {
